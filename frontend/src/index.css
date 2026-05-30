@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@media print {
+  nav, aside, button, .breadcrumb, footer {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+  .shadow-sm, .shadow-md, .shadow-lg {
+    box-shadow: none !important;
+  }
+  .border {
+    border-color: #e2e8f0 !important;
+  }
+}
